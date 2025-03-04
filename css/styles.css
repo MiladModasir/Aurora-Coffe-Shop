@@ -196,7 +196,7 @@ header a:hover {
 
 .menu-section {
   padding: 50px 20px;
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Roasted_coffee_beans.jpg/1200px-Roasted_coffee_beans.jpg'); 
+  background-image: url('https://jukeboxy-media.s3.amazonaws.com/blog/wp-content/uploads/2022/02/19102011/background-music-for-coffee-shops.jpg'); 
   color: white;
   background-size: cover;
   background-position: center;
@@ -275,7 +275,8 @@ header a:hover {
 }
 .contact-form button:hover {
   background-color: #e6b800;
-}
+} 
+
 footer {
   padding: 20px;
   background:rgb(255, 172, 186);
@@ -413,7 +414,7 @@ footer {
   .menu-section {
     padding: 50px 20px;
     color: white;
-    background-image:url('https://hips.hearstapps.com/hmg-prod/images/cup-of-coffee-royalty-free-image-1581611460.jpg?crop=1.00xw:0.751xh;0,0.153xh&resize=1200:*');
+    background-image:url('https://jukeboxy-media.s3.amazonaws.com/blog/wp-content/uploads/2022/02/19102011/background-music-for-coffee-shops.jpg');
     width: 100%;
   }
   .menu-section h2{
@@ -624,7 +625,7 @@ footer {
   
   .menu-section {
     padding: 50px 20px;
-    background-image: url('https://hips.hearstapps.com/hmg-prod/images/cup-of-coffee-royalty-free-image-1581611460.jpg?crop=1.00xw:0.751xh;0,0.153xh&resize=1200:*');
+    background-image: url('https://jukeboxy-media.s3.amazonaws.com/blog/wp-content/uploads/2022/02/19102011/background-music-for-coffee-shops.jpg');
     color: white;
     width: 100%;
   }
