@@ -1,0 +1,720 @@
+:root {
+  --primary-color: #ffcc00;
+  --background-light: #fff8e1;
+  --background-dark: #4a2c2a;
+  --text-light: white;
+  --text-dark: black;
+}
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media(min-width:1024px) {
+body {
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  font-family: 'poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+body.morning-theme {
+  background-color: #fff8e1;
+  color: white;
+}
+body.night-theme {
+  background-color: blanchedalmond;
+  color: white;
+}
+body.night-theme .hero-content {
+color: #000000;
+}
+body.night-theme .btn {
+  display: inline-block;
+  background: #ffcc00;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+  transition: 0.3s;
+  width: 200px;
+  margin: auto;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#theme-toggle {
+  background-color: transparent;
+  border: 2px solid #000000;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+#theme-toggle:hover {
+  background-color: #ffcc00;
+  color: black;
+}
+a {
+  color: rgb(18, 18, 18);
+  transition: color 0.3s ease;
+}
+body.morning-theme a {
+  color: white;
+}
+body.night-theme a {
+  color: #ffcc00;
+}
+body.night-theme .container {
+background-color: #4a2c2a;
+}
+body.night-theme footer{
+  background-color: #4a2c2a;
+}
+.container {
+  display: flex;
+  background-color: rgb(255, 172, 186);
+  background-size: cover;  
+  background-position: center;  
+  background-repeat: no-repeat;  
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 10px 20px;
+  height: 100px;
+  flex-wrap: wrap;
+}
+
+
+.coffee {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+header ul {
+  display: flex;
+  list-style-type: none;
+  gap: 30px; 
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+}
+.trigram{
+  display: none;
+}
+
+header a:hover {
+  color: #ffcc00; 
+}
+#about {
+  background: url('https://source.unsplash.com/1600x900/?coffee,shop') no-repeat center;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+.hero-content {
+  padding: 100px 20px;
+  background: url('https://source.unsplash.com/1600x900/?coffee,shop') no-repeat center;
+  background-size: cover;
+  color: #4a2c2a; ;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.btn {
+  display: inline-block;
+  background: #ffcc00;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+  transition: 0.3s;
+  width: 200px;
+  margin: auto;
+}
+.btn:hover {
+  background: #e6b800;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.about-text h2 {
+  font-size: 32px;
+  color: #4a2c2a; 
+  margin-bottom: 10px;
+}
+
+.about-text p {
+  font-size: 18px;
+  color: #4a2c2a;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+
+.about-image {
+  flex: 1;
+  max-width: 350px;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(3, 5, 9, 0.2);
+}
+
+.menu-section {
+  padding: 50px 20px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Roasted_coffee_beans.jpg/1200px-Roasted_coffee_beans.jpg'); 
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.menu-section h2{
+  text-align: center;
+}
+.menu-container {
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.1);
+}
+.menu-category h3 {
+  font-size: 24px;
+  margin-top: 20px;
+}
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 1px solid gray;
+}
+.menu-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.description {
+  display: none;
+  font-size: 14px;
+  color: #cccccc;
+  text-align: left;
+  margin-top: 5px;
+}
+.description.show {
+  display: block;
+}
+
+.contact-section {
+  padding: 40px 20px;
+  background: url('https://source.unsplash.com/1600x900/?coffee,shop') no-repeat center;
+  color: #4a2c2a;
+  background-color:  #f8f1e5;
+  text-align: center;
+}
+.contact-form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  color: #4a2c2a;
+}
+.contact-form label {
+  text-align: left;
+  margin-top: 10px;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+}
+.contact-form button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+}
+.contact-form button:hover {
+  background-color: #e6b800;
+}
+footer {
+  padding: 20px;
+  background:rgb(255, 172, 186);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-contend{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-contend a{
+  text-decoration: none;
+}
+}
+@media(max-width:1023px) {
+  #theme-toggle{
+    display: none;
+  }
+  .container {
+    display: flex;
+    background-color: rgb(255, 172, 186);
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat;  
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 10px 20px;
+    height: 100px;
+    flex-wrap: wrap;
+  }
+  
+  
+  .coffee {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  
+  header ul {
+    display: none;
+  }
+  
+  
+  .trigram{ 
+      background: none;
+      border: none;
+      align-items: flex-end;
+    color: #ffffff;
+    margin: auto;
+    margin-right: 10px;
+  }
+  
+  #about {
+    background:url('https://source.unsplash.com/1600x900/?coffee,shop') no-repeat center;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .hero-content {
+    padding: 100px 20px;
+    background-color:  #f8f1e5;
+    background-size: cover;
+    color: #4a2c2a; ;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+  .btn {
+    display: inline-block;
+    background: #ffcc00;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin: auto;
+  }
+  .btn:hover {
+    background: #e6b800;
+  }
+  #about{
+    background-color: #f8f1e5;
+    margin: auto;
+  }
+  .about-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .about-text {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .about-text h2 {
+    font-size: 32px;
+    color: #4a2c2a; 
+    margin-bottom: 10px;
+  }
+  
+  .about-text p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  
+  .about-image {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(3, 5, 9, 0.2);
+  }
+  
+  .menu-section {
+    padding: 50px 20px;
+    color: white;
+    background-image:url('https://hips.hearstapps.com/hmg-prod/images/cup-of-coffee-royalty-free-image-1581611460.jpg?crop=1.00xw:0.751xh;0,0.153xh&resize=1200:*');
+    width: 100%;
+  }
+  .menu-section h2{
+    text-align: center;
+  }
+  .menu-container {
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.1);
+  }
+  .menu-category h3 {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+  }
+  .menu-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .description {
+    display: none;
+    font-size: 14px;
+    color: #cccccc;
+    text-align: left;
+    margin-top: 5px;
+  }
+  .description.show {
+    display: block;
+  }
+  
+  .contact-section {
+    padding: 40px 20px;
+    background-color:  #f8f1e5;
+    color: #4a2c2a;
+    text-align: center;
+  }
+  .contact-form {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-form label {
+    text-align: left;
+    margin-top: 10px;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+  }
+  .contact-form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .contact-form button:hover {
+    background-color: #e6b800;
+  }
+  footer {
+    padding: 20px;
+    background: rgb(255, 172, 186);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .footer-contend{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-contend a{
+    text-decoration: none;
+    color: white;
+  }
+}
+
+@media(max-width:767px) {
+  #theme-toggle{
+    display: none;
+  }
+  .container {
+    display: flex;
+    background-color: rgb(255, 172, 186);
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat;  
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 10px 20px;
+    height: 100px;
+    flex-wrap: wrap;
+  }
+  
+  
+  .coffee {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  
+  header ul {
+    display: none;
+  }
+  
+  
+  .trigram{ 
+      background: none;
+      border: none;
+      align-items: flex-end;
+    color: #ffffff;
+    margin: auto;
+    margin-right: 10px;
+  }
+  
+  #about {
+    background-color: #f8f1e5; 
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .hero-content {
+    padding: 100px 20px;
+    background-color: #f8f1e5;
+    background-size: cover;
+    color: #4a2c2a; 
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+  .btn {
+    display: inline-block;
+    background: #ffcc00;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin: auto;
+  }
+  .btn:hover {
+    background: #e6b800;
+  }
+  
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .about-text {
+    flex: 1;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .about-text h2 {
+    font-size: 32px;
+    color: #4a2c2a; 
+    margin-bottom: 10px;
+    text-decoration: underline;
+  }
+  
+  .about-text p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  
+  .about-image {
+    flex: 1;
+    max-width: 500px;
+    width: 150px;
+  }
+  
+  .about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(3, 5, 9, 0.2);
+  } 
+  
+  .menu-section {
+    padding: 50px 20px;
+    background-image: url('https://hips.hearstapps.com/hmg-prod/images/cup-of-coffee-royalty-free-image-1581611460.jpg?crop=1.00xw:0.751xh;0,0.153xh&resize=1200:*');
+    color: white;
+    width: 100%;
+  }
+  .menu-section h2{
+    text-align: center;
+  }
+  .menu-container {
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.1);
+  }
+  .menu-category h3 {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+  }
+  .menu-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .description {
+    display: none;
+    font-size: 14px;
+    color: #cccccc;
+    text-align: left;
+    margin-top: 5px;
+  }
+  .description.show {
+    display: block;
+  }
+  
+  .contact-section {
+    padding: 40px 20px;
+    background-color: #f8f1e5;
+    color: #4a2c2a;
+    text-align: center;
+  }
+  .contact-form {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-form label {
+    text-align: left;
+    margin-top: 10px;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+  }
+  .contact-form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .contact-form button:hover {
+    background-color: #e6b800;
+  }
+  footer {
+    padding: 20px;
+    background:  rgb(255, 172, 186);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .footer-contend{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-contend a{
+    text-decoration: none;
+    color: white;
+  }
+}
+

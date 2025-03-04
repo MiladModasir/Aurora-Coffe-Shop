@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <title>Aurora Coffee Shop</title>
+</head>
+<body class="morning-theme">
+  <header>
+  <div class="container">
+    <h1 class="coffee">Aurora Coffee Shop</h1>
+    <button id="theme-toggle">🌞 / 🌙</button>
+    <button class="trigram">
+      <i class="fa fa-bars"></i>
+    </button>
+  
+    <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#About">About Us</a></li>
+      <li><a href="#Contact">Contact Us</a></li>
+      <li><a href="#Menu">Menu</a></li>
+    </ul>
+  </nav>
+  </div>
+  </header>
+
+  <section id="hero">
+    <div class="hero-content">
+        <h2>Experience the Perfect Brew</h2>
+        <p>Crafted with passion, served with love.</p>
+        <a href="#menu" class="btn">View Menu</a>
+    </div>
+</section>
+  
+  <section id="about">
+    <div class="about-container">
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p>Welcome to Aurora Coffee Shop, a cozy place where coffee lovers gather to enjoy rich, aromatic brews and delicious pastries. Our passion is to bring people together over the finest coffee, made with love and care.</p>
+        <p>From locally sourced beans to handcrafted drinks, we ensure every cup tells a story. Join us for a warm atmosphere, great company, and the best coffee in town.</p>
+      </div>
+      <div class="about-image">
+        <img src="https://www.vittoriacoffee.com/cdn/shop/articles/australian-coffee-types_1x.svg?v=1725341955"
+        alt="Aurora Coffee Shop Interior">
+      </div>
+    </div>
+  </section>
+  <section class="menu-section">
+    <h2>Our Menu</h2>
+    <div class="menu-container">
+        
+        <div class="menu-category">
+            <h3>Coffee</h3>
+            <div class="menu-item" onclick="toggleDescription(this)">
+                <span>Espresso</span> <span>$12.99</span>
+                <p class="description">Strong, bold, and pure espresso shot.</p>
+            </div>
+            <div class="menu-item" onclick="toggleDescription(this)">
+                <span>Cappuccino</span> <span>$23.55</span>
+                <p class="description">Espresso with steamed milk & frothy foam.</p>
+            </div>
+        </div>
+        
+        <div class="menu-category">
+            <h3>Tea</h3>
+            <div class="menu-item" onclick="toggleDescription(this)">
+                <span>Matcha Latte</span> <span>$22.00</span>
+                <p class="description">Rich, earthy matcha with creamy milk.</p>
+            </div>
+            <div class="menu-item" onclick="toggleDescription(this)">
+                <span>Jasmine Tea</span> <span>$15.00</span>
+                <p class="description">Floral, soothing green tea with jasmine aroma.</p>
+            </div>
+        </div>
+        
+        <div class="menu-category">
+            <h3>Snacks</h3>
+            <div class="menu-item" onclick="toggleDescription(this)">
+                <span>French Fries</span> <span>$12.99</span>
+                <p class="description">Golden crispy fries with a touch of sea salt.</p>
+            </div>
+            <div class="menu-item" onclick="toggleDescription(this)">
+                <span>Spicy Wings</span> <span>$17.00</span>
+                <p class="description">Crispy wings tossed in our signature spicy sauce.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact-section">
+  <h2>Contact Us</h2>
+  <form class="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      
+      <button type="submit">Send Message</button>
+  </form>
+</section>
+<footer>
+  <p>&copy; 2025 Aurora Coffee Shop | Crafted with ❤️</p>
+  <div class="footer-contend">
+    <h3>Phone:</h3>
+    <a href="">(1)720-433-6778</a>
+    <h3>Adress:</h3>
+    <a href="">1663 W Ave, Aurora CO </a>
+    <h3>Email:</h3>
+    <a href="">AuroraCoffeShop09@gmail.com</a>
+  </div>
+</footer>
+
+
+<script src="index.js" type="text/javascript"></script>
+<!-- <script src="index.js" defer></script> -->
+
+
